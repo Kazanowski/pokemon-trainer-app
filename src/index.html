@@ -11,5 +11,20 @@
     />
     <script type="module" src="./bundle.js" defer></script>
   </head>
-  <body id="app"></body>
+  <body id="app" class="app-wrapper">
+    <div class="card" id="page-home">
+      <h1>
+        Welcome in <br />
+        <span class="heading-primary">Pokemon Trainer App</span>
+      </h1>
+      <form id="form-nickname" class="form-nickname" action="">
+        <div class="field">
+          <label for="nickname">Enter your nickname</label>
+          <input type="text" value="" id="nickname" autocomplete="off" />
+          <!-- <span class="helper-text">Nickname is required!</span> -->
+        </div>
+        <input type="submit" value="Continue" class="btn--primary" />
+      </form>
+    </div>
+  </body>
 </html>

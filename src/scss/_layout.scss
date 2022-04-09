@@ -1,1 +1,30 @@
+.app-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 1rem auto 0 auto;
+}
 
+.form-nickname {
+  margin-top: 3rem;
+
+  input[type="submit"] {
+    @extend %input;
+    cursor: pointer;
+    line-height: 1.75rem;
+    border: none;
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, sm)) {
+  .form-nickname {
+    margin-top: 4rem;
+
+    input[type="submit"] {
+      font-size: 1.25rem;
+    }
+  }
+}
