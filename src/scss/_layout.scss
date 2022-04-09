@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (min-width: map-get($breakpoints, customSmall)) {
+@media screen and (min-width: map-get($breakpoints, xms)) {
   .pokemons {
     .pokemon {
       width: calc((100% - 1.25rem) / 2);
