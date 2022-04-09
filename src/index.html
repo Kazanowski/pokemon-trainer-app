@@ -12,7 +12,7 @@
     <script type="module" src="./bundle.js" defer></script>
   </head>
   <body id="app" class="app-wrapper">
-    <div class="card" id="page-home">
+    <!-- <div class="card" id="page-home">
       <h1>
         Welcome in <br />
         <span class="heading-primary">Pokemon Trainer App</span>
@@ -21,10 +21,55 @@
         <div class="field">
           <label for="nickname">Enter your nickname</label>
           <input type="text" value="" id="nickname" autocomplete="off" />
-          <!-- <span class="helper-text">Nickname is required!</span> -->
+          <span class="helper-text">Nickname is required!</span>
         </div>
         <input type="submit" value="Continue" class="btn--primary" />
       </form>
+    </div> -->
+
+    <div id="page-welcome" class="page-welcome">
+      <h1>Hello, <span class="heading-primary">Nickname</span></h1>
+      <div class="pokemons-wrapper">
+        <h2>You have a chance to catch them!</h2>
+        <div class="pokemons">
+          <figure class="pokemon">
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+              alt="bulbasaur"
+            />
+            <figcaption>bulbasaur</figcaption>
+          </figure>
+          <figure class="pokemon">
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+              alt="ivysaur"
+            />
+            <figcaption>ivysaur</figcaption>
+          </figure>
+          <figure class="pokemon">
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+              alt="venusaur"
+            />
+            <figcaption>venusaur</figcaption>
+          </figure>
+          <figure class="pokemon">
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+              alt="charmander"
+            />
+            <figcaption>charmander</figcaption>
+          </figure>
+          <figure class="pokemon">
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
+              alt="charmeleon"
+            />
+            <figcaption>charmeleon</figcaption>
+          </figure>
+        </div>
+        <button class="btn btn--primary btn-catch">Catch'em</button>
+      </div>
     </div>
   </body>
 </html>

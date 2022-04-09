@@ -2,12 +2,14 @@ $color-primary: #feca1b;
 $color-secondary: #3761a8;
 $color-danger: #ef5350;
 $color-dark: #2f2f2f;
+$color-light: #eff1f0;
 $color-white: #ffffff;
 
 $font-heading: "Poppins", sans-serif;
 $font-body: "Raleway", sans-serif;
 
 $breakpoints: (
+  customSmall: 420px,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -52,15 +54,24 @@ h2 {
 h1 {
   font-size: 2rem;
 }
+h2 {
+  font-size: 1.5rem;
+}
 
 @media screen and (min-width: map-get($breakpoints, sm)) {
   h1 {
     font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
   }
 }
 
 @media screen and (min-width: map-get($breakpoints, lg)) {
   h1 {
     font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
   }
 }

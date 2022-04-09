@@ -62,6 +62,9 @@
 }
 
 .btn {
+  @extend %input;
+  line-height: 1.75rem;
+  border: none;
   &--primary {
     color: $color-dark;
     background-color: $color-primary;
@@ -76,6 +79,7 @@
   .card {
     max-width: 480px;
   }
+  .btn,
   .field input,
   .field label {
     font-size: 1.25rem;
