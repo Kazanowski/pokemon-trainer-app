@@ -63,6 +63,7 @@
 
 .btn {
   @extend %input;
+  cursor: pointer;
   line-height: 1.75rem;
   border: none;
   &--primary {
